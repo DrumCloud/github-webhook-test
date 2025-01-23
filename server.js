@@ -28,7 +28,7 @@ app.post('/webhook', async (req, res) => {
             );
 
             const modifiedFiles = filesResponse.data;
-            const jsonFiles = modifiedFiles.filter(file => file.filename.endsWith('.README'));
+            const jsonFiles = modifiedFiles.filter(file => file.filename.endsWith('.md'));
 
             for (const file of jsonFiles) {
                 await axios.post(
