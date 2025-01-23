@@ -12,7 +12,7 @@ app.post('/webhook', async (req, res) => {
     const event = req.headers['x-github-event'];
     const payload = req.body;
 
-    if (event === 'pull_request' && payload.action === 'opened') {
+    if (event === 'pull_request' && payload.action === 'reopened') {
         const prNumber = payload.number;
         const repoName = payload.repository.full_name;
 
