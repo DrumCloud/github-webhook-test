@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 
 const app = express();
 const PORT = 3000;
-const GITHUB_TOKEN = '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'; // Replace with your token
+const GITHUB_TOKEN = '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'; // Replace with your token
 
 app.use(bodyParser.json());
 
