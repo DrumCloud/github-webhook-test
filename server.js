@@ -22,7 +22,7 @@ app.post('/webhook', async (req, res) => {
                 `https://api.github.com/repos/${repoName}/pulls/${prNumber}/files`,
                 {
                     headers: {
-                        Authorization: `Bearer ${GITHUB_TOKEN}`
+                        Authorization: `token ${GITHUB_TOKEN}`
                     }
                 }
             );
